@@ -117,3 +117,6 @@ button:disabled{
 .error-text {
   color: #b40e0e;
 }
+textarea{
+  resize: none;
+}

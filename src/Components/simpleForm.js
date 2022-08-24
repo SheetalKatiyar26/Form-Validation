@@ -84,8 +84,15 @@ const SimpleForm = () => {
     ) {
       return;
     }
-    alert("Name:" ,enteredName,"Email:",enteredEmail,"Number:",enteredNumber,"Country:",enteredCountry,
-    "City:",enteredCity,"Message:",enteredMessage);
+    alert("Your Form has been Submitted!!");
+
+    console.log("Name: "+enteredName.toLowerCase());
+    console.log("Email: "+enteredEmail.toLowerCase());
+    console.log("Phone: "+enteredNumber.toLowerCase());
+    console.log("Country: "+enteredCountry.toLowerCase());
+    console.log("State: "+enteredState.toLowerCase());
+    console.log("City: "+enteredCity.toLowerCase());
+    console.log("Message: "+enteredMessage.toLowerCase());
 
     nameIsReset();
     emailIsReset();
@@ -125,7 +132,7 @@ const SimpleForm = () => {
   return (
     <form onSubmit={onSubmitForm}>
       <div className={inputClass}>
-        <label htmlFor="name">Your Name <span style={"color:red"}>*</span></label>
+        <label htmlFor="name">Your Name <span style={{color:"red"}}> *</span></label>
         <input
           required
           type="text"
@@ -137,7 +144,7 @@ const SimpleForm = () => {
         {nameIsInvalid && <p className="error-text">Name must not be empty.</p>}
       </div>
       <div className={inputClassEmail}>
-        <label htmlFor="email">Your Email <span style={"color:red"}>*</span></label>
+        <label htmlFor="email">Your Email <span style={{color:"red"}}> *</span></label>
         <input
           required
           type="text"
@@ -195,6 +202,7 @@ const SimpleForm = () => {
       <div className={inputClassMessage}>
         <label htmlFor="message">Any Message</label>
         <textarea
+          
           rows="6"
           cols="38"
           type="text"
