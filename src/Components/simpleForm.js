@@ -84,13 +84,8 @@ const SimpleForm = () => {
     ) {
       return;
     }
-    console.log(enteredName);
-    console.log(enteredEmail);
-    console.log(enteredNumber);
-    console.log(enteredCountry);
-    console.log(enteredState);
-    console.log(enteredCity);
-    console.log(enteredMessage);
+    alert("Name:" ,enteredName,"Email:",enteredEmail,"Number:",enteredNumber,"Country:",enteredCountry,
+    "City:",enteredCity,"Message:",enteredMessage);
 
     nameIsReset();
     emailIsReset();
@@ -130,7 +125,7 @@ const SimpleForm = () => {
   return (
     <form onSubmit={onSubmitForm}>
       <div className={inputClass}>
-        <label htmlFor="name">Your Name</label>
+        <label htmlFor="name">Your Name <span style={"color:red"}>*</span></label>
         <input
           required
           type="text"
@@ -142,7 +137,7 @@ const SimpleForm = () => {
         {nameIsInvalid && <p className="error-text">Name must not be empty.</p>}
       </div>
       <div className={inputClassEmail}>
-        <label htmlFor="email">Your Email</label>
+        <label htmlFor="email">Your Email <span style={"color:red"}>*</span></label>
         <input
           required
           type="text"
