@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import useInput from "../Hooks/use-input";
 
 const SimpleForm = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [data, setData] = useState({});
 
   const {
