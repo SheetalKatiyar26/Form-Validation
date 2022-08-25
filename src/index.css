@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 body {
-  margin: 0;
-  background-color: #3f3f3f;
+  margin: 0 !important;
+  background-color: #3f3f3f !important;
 }
 
-.app{
+.app {
   width: 90%;
   max-width: 43rem;
   padding: 1rem;
@@ -21,7 +21,7 @@ body {
   background-color: white;
   margin: 2rem auto;
 }
-.appHeading{
+.appHeading {
   width: 90%;
   max-width: 43rem;
   padding: 1rem;
@@ -30,23 +30,22 @@ body {
   margin: 1rem auto;
 }
 
-
-.form-control {
+.form-control-form {
   margin-bottom: 1rem;
 }
 
-.form-control input,
-.form-control label {
+.form-control-form input,
+.form-control-form label {
   display: block;
 }
 
-.form-control label {
+.form-control-form label {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.form-control input,
-.form-control select {
+.form-control-form input,
+.form-control-form select {
   font: inherit;
   padding: 0.5rem;
   border-radius: 4px;
@@ -55,7 +54,7 @@ body {
   max-width: 100%;
 }
 
-.form-control input:focus {
+.form-control-form input:focus {
   outline: none;
   border-color: #240370;
   background-color: #e0d4fd;
@@ -67,7 +66,7 @@ body {
   flex-wrap: wrap;
 }
 
-.control-group .form-control {
+.control-group .form-control-form {
   min-width: 15rem;
   flex: 1;
 }
@@ -106,17 +105,23 @@ button:active {
   background-color: #fbe8d2;
 }
 
-button:disabled{
+button:disabled {
   background-color: #ccc;
-  color:#3f3f3f;
+  color: #3f3f3f;
   border-color: #ccc;
-  cursor:not-allowed;
+  cursor: not-allowed;
 }
-
 
 .error-text {
   color: #b40e0e;
 }
-textarea{
+textarea {
   resize: none;
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+  min-height: 45px;
 }
