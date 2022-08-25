@@ -1,5 +1,6 @@
 import React from "react";
 import SimpleForm from "./Components/simpleForm";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./index.css";
 
